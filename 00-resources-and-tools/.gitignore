@@ -1,0 +1,7 @@
+target
+.vscode
+go.sum
+.apt_generated
+.apt_generated_tests
+dependency-reduced-pom.xml
+.DS_Store

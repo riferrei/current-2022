@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "current.session.riferrei";
+option go_package="./;main";
+
+message Person {
+    string userName = 1;
+    optional int64 favoriteNumber = 2;
+    repeated string interests = 3;
+}

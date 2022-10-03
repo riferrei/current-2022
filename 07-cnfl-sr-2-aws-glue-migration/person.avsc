@@ -1,0 +1,26 @@
+{
+    "namespace": "current.session.riferrei",
+    "type": "record",
+    "name": "Person",
+    "fields": [
+        {
+            "name": "userName",
+            "type": "string"
+        },
+        {
+            "name": "favoriteNumber",
+            "type": [
+                "null",
+                "long"
+            ],
+            "default": null
+        },
+        {
+            "name": "interests",
+            "type": {
+                "type": "array",
+                "items": "string"
+            }
+        }
+    ]
+}
