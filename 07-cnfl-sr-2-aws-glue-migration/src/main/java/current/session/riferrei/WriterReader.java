@@ -55,7 +55,7 @@ public class WriterReader {
 		// properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, GlueSchemaRegistryKafkaSerializer.class.getName());
 		// properties.put(AWSSchemaRegistryConstants.DATA_FORMAT, DataFormat.AVRO.name());
 		// properties.put(AWSSchemaRegistryConstants.AWS_REGION, "us-east-1");
-		// properties.put(AWSSchemaRegistryConstants.REGISTRY_NAME, "test-2022-4");
+		// properties.put(AWSSchemaRegistryConstants.REGISTRY_NAME, "current-2022");
 		// properties.put(AWSSchemaRegistryConstants.SCHEMA_NAME, "person.avsc");
 		// properties.put(AWSSchemaRegistryConstants.SCHEMA_AUTO_REGISTRATION_SETTING, "true");
 		// properties.put(AWSSchemaRegistryConstants.AVRO_RECORD_TYPE, AvroRecordType.SPECIFIC_RECORD.getName());
