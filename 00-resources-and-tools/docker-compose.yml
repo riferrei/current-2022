@@ -56,3 +56,22 @@ services:
       interval: 5s
       retries: 10
       test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://localhost:8081
+
+  conduktor:
+    image: conduktor/conduktor-platform:latest
+    hostname: conduktor
+    container_name: conduktor
+    depends_on:
+      broker:
+        condition: service_healthy
+      schema-registry:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    environment:
+      KAFKA_BOOTSTRAP_SERVER: 'broker:29092'
+      SCHEMA_REGISTRY_URL: 'http://localhost:8081'
+    healthcheck:
+      interval: 5s
+      retries: 10
+      test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://conduktor:80
