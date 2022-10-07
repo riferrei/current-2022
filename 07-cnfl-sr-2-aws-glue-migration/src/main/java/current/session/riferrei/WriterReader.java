@@ -94,7 +94,7 @@ public class WriterReader {
 		
 		// properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, GlueSchemaRegistryKafkaDeserializer.class.getName());
 		// properties.put(AWSSchemaRegistryConstants.AWS_REGION, "us-east-1");
-		// properties.put(AWSSchemaRegistryConstants.REGISTRY_NAME, "test-2022-4");
+		// properties.put(AWSSchemaRegistryConstants.REGISTRY_NAME, "current-2022");
 		// properties.put(AWSSchemaRegistryConstants.AVRO_RECORD_TYPE, AvroRecordType.SPECIFIC_RECORD.getName());
 
 		// properties.put(AWSSchemaRegistryConstants.SECONDARY_DESERIALIZER, KafkaAvroDeserializer.class.getName());
